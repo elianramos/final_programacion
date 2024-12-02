@@ -1,0 +1,135 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>postres</title>
+
+		<link rel="stylesheet" href="styles.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="index.html">D'Gustelo</a></h1>
+					</div>
+
+
+					
+					
+					<div class="container-user">
+						<button id="userButton" class="user-button">
+							<i class="fa-solid fa-user"></i>
+						</button>
+						<div id="userDropdown" class="user-dropdown">
+							<div class="user-dropdown-content">
+								<a href="#"><i class="fas fa-user"></i> Perfil</a>
+								<a href="#"><i class="fas fa-cog"></i> Configuración</a>
+								<a href="login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						document.getElementById('userButton').addEventListener('click', function() {
+							document.getElementById('userDropdown').classList.toggle('active');
+						});
+				
+					
+						document.addEventListener('click', function(event) {
+							const dropdown = document.getElementById('userDropdown');
+							const button = document.getElementById('userButton');
+							
+							if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+								dropdown.classList.remove('active');
+							}
+						});
+					</script>
+					
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="soporte.html" class="text-decoration-none">
+							<i class="fa-solid fa-headset"></i>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="cafes.html">cafes</a></li>
+						<li><a href="postres.html">Postres</a></li>
+						<li><a href="helados.html">Helados</a></li>
+						<li><a href="BLOG.html">Blog</a></li>
+						<li><a href="carrito.html" class="text-decoration-none">
+							<i class="fa-solid fa-basket-shopping"></i>
+						  </a>
+						  </li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+        
+
+        <section class="container blogs">
+			<h1 class="heading-1">Soporte Tecnico</h1>
+
+			<div class="container-blogs">
+				<div class="card-blog">
+					<div class="container-img">
+					
+
+						<div class="button-group-blog">
+							<span>
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-link"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-blog">
+						<h3>Telefono</h3>
+						<p>
+							809-555-9696
+						</p>
+					</div>
+				</div>
+				<div class="card-blog">
+					<div class="container-img">
+						<div class="button-group-blog">
+							<span>
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</span>
+							<span>
+								<i class="fa-solid fa-link"></i>
+							</span>
+						</div>
+					</div>
+					<div class="content-blog">
+						<h3>Correo electronico</h3>
+						<p>
+						soportedegustelo@gmail.com	
+						</p>
+					</div>
+				</div>
+    </body>
+</html>
