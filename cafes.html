@@ -1,0 +1,234 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>cafe</title>
+
+		<link rel="stylesheet" href="styles.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div class="container-hero">
+				<div class="container hero">
+
+
+					<div class="container-logo">
+						<i class="fa-solid fa-mug-hot"></i>
+						<h1 class="logo"><a href="index.html">D'Gustelo</a></h1>
+					</div>
+
+
+					
+					
+					<div class="container-user">
+						<button id="userButton" class="user-button">
+							<i class="fa-solid fa-user"></i>
+						</button>
+						<div id="userDropdown" class="user-dropdown">
+							<div class="user-dropdown-content">
+								<a href="#"><i class="fas fa-user"></i> Perfil</a>
+								<a href="#"><i class="fas fa-cog"></i> Configuración</a>
+								<a href="login.html"><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+							</div>
+						</div>
+					</div>
+
+					<script>
+						document.getElementById('userButton').addEventListener('click', function() {
+							document.getElementById('userDropdown').classList.toggle('active');
+						});
+				
+						
+						document.addEventListener('click', function(event) {
+							const dropdown = document.getElementById('userDropdown');
+							const button = document.getElementById('userButton');
+							
+							if (!dropdown.contains(event.target) && !button.contains(event.target)) {
+								dropdown.classList.remove('active');
+							}
+						});
+					</script>
+					
+
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+
+			<div class="container-navbar">
+				<nav class="navbar container">
+					<i class="fa-solid fa-bars"></i>
+					<ul class="menu">
+						<li><a href="soporte.html" class="text-decoration-none">
+							<i class="fa-solid fa-headset"></i>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="cafes.html">cafes</a></li>
+						<li><a href="postres.html">Postres</a></li>
+						<li><a href="helados.html">Helados</a></li>
+						<li><a href="BLOG.html">Blog</a></li>
+						<li><a href="carrito.html" class="text-decoration-none">
+							<i class="fa-solid fa-basket-shopping"></i>
+						  </a>
+						  </li>
+					</ul>
+
+					<form class="search-form">
+						<input type="search" placeholder="Buscar..." />
+						<button class="btn-search">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</button>
+					</form>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container-products">
+
+			<!--Producto -->
+			<div class="card-product">
+				<div class="container-img">
+					<img src="img/cafe_sencillo.jpg" alt="Cafe con jenjibre"/>
+					<span class="discount">-13%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cafe sencillo</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$4.60 <span>$5.30</span></p>
+				</div>
+			</div>
+			
+
+			<div class="card-product">
+				<div class="container-img">
+					<img
+						src="img/cafe_jenjibre.jpg"
+						alt="Cafe incafe-ingles.jpg"
+					/>
+					<span class="discount">-22%</span>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Cafe espumoso</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.70 <span>$7.30</span></p>
+				</div>
+			</div>
+
+			
+			<div class="card-product">
+				<div class="container-img">
+					<img
+						src="img/frappe_fresa.jpg"
+						alt="panckaques"
+					/>
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+					</div>
+					<h3>Frappe de Fresa</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$6.20</p>
+				</div>
+			</div>
+			
+			
+			<div class="card-product">
+				<div class="container-img">
+					<img src="img/frappes.jpg" alt="frappe de frappe_fresa" />
+					<div class="button-group">
+						<span>
+							<i class="fa-regular fa-eye"></i>
+						</span>
+						<span>
+							<i class="fa-regular fa-heart"></i>
+						</span>
+						<span>
+							<i class="fa-solid fa-code-compare"></i>
+						</span>
+					</div>
+				</div>
+				<div class="content-card-product">
+					<div class="stars">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<h3>Frappe de Chocolate</h3>
+					<span class="add-cart">
+						<i class="fa-solid fa-basket-shopping"></i>
+					</span>
+					<p class="price">$5.60</p>
+				</div>
+			</div>
+		</div>
+	</section>
+			</div>
+		</section>
+
+		
